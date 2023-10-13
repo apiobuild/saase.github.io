@@ -1,0 +1,63 @@
+baseURL = "https://saase.apiobuild.com"
+title = "saase by apio | SaaS as a Service"
+languageCode = "en-us"
+themesDir = "themes"
+theme = "custom-theme"
+relativeURLs = true
+googleAnalytics = "G-362532426"
+disqusShortname = "apiobuild-com"
+enableRobotsTXT = true
+assetDir = "static"
+
+[params]
+  footer = "Made by 🦌 and 🐟 with ❤️ and 🍵 in 🗽"
+  image = "/images/logo_square.png"
+  email = "apiobuild@gmail.com"
+  facebook = "https://www.facebook.com/apiobuild"
+  linkedinfooter = "https://www.linkedin.com/company/apiobuild/"
+  instagramfooter = "https://instagram.com/apiobuild/"
+  youtube = "https://www.youtube.com/channel/UC3qHVynCMuS4Y7regZRbrtA/"
+[taxonomies]
+  tag = "tags"
+
+[params.meta]
+  meta_description = "At apio, we want to enable developers to focus on building high quality and long-lasting software; customers to combine and customize pieces of software to their own needs without technical background."
+  meta_og_type = "website"
+  meta_twitter_card = "summary"
+  meta_twitter_site = "@l1990790120"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[[menu.main]]
+	name = "features"
+	url = "/#features"
+  weight = -3
+
+[[menu.main]]
+	name = "pricing"
+	url = "/#pricing"
+  weight = 3
+
+[[menu.main]]
+	name = "about"
+	url = "/#about"
+  weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
+
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe= true
+  [markup.highlight]
+    noClasses = true
+    style = "rainbow_dash"
+  [markup.goldmark.parser]
+    attribute = true
+    autoHeadingID = true
+    autoHeadingIDType = "blackfriday"

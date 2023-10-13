@@ -1,0 +1,12 @@
+{{ define "banner" }}
+{{ partial "landing_page/banner.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+{{ $menu := sort .Site.Menus.main ".Params.Weight" }}
+{{ range $menu }}
+    {{ partial "landing_page/landing_page_section.html" . }}
+{{ end }}
+
+{{ end }}
